@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home" >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7ECE6"
+        android:minHeight="?actionBarSize"
+        android:theme="?actionBarTheme">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medi Reminder"
+            android:textColor="#4C8FB0"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/addmedbtn"
+            android:layout_width="90sp"
+            android:layout_height="90sp"
+            android:layout_gravity="right"
+            android:text="+" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/ReminderListView"
+        android:layout_width="match_parent"
+        android:layout_height="426dp"
+        android:layout_marginTop="3dp"
+        android:divider="#4C8FB0"
+        android:dividerHeight="3dp" />
+
+
+
+
+</LinearLayout>

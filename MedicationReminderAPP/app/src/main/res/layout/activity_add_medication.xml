@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7ECE6"
+    tools:context=".AddMedication">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="130dp"
+        android:layout_height="304dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="83dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/NextToReminder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+        <RadioButton
+            android:id="@+id/RBtablets"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="5dp"
+            android:text="Tablets"
+            android:textColor="#4C8FB0" />
+
+        <RadioButton
+            android:id="@+id/RBcapsule"
+            android:layout_width="115dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="38dp"
+            android:text="Capsule"
+            android:textColor="#4C8FB0" />
+
+        <RadioButton
+            android:id="@+id/RBinjection"
+            android:layout_width="116dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="120dp"
+            android:text="Injection "
+            android:textColor="#4C8FB0" />
+
+        <RadioButton
+            android:id="@+id/RBdrops"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="20dp"
+            android:text="Drops"
+            android:textColor="#4C8FB0" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="10dp"
+        android:text="Type :"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="181dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="168dp"
+        android:text="Add Medication"
+        android:textColor="#4C8FB0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/MedName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Panadol.."
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/AOD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="7dp"
+        android:text="Medicament Name :"
+        android:textColor="#4C8FB0"
+        android:textIsSelectable="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toStartOf="@+id/MedName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="13dp"
+        android:text="Amount of Does :"
+        android:textColor="#4C8FB0"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintEnd_toStartOf="@+id/AOD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <EditText
+        android:id="@+id/AOD"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="292dp"
+        android:ems="10"
+        android:hint="0.5 ,0.10,ect."
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/NextToReminder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/MedName"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/NextToReminder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="91dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup3"
+        app:layout_constraintTop_toBottomOf="@+id/AOD" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

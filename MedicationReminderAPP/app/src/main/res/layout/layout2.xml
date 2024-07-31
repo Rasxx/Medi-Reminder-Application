@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/MedName"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:text="new text"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/AOD"
+            android:layout_width="399dp"
+            android:layout_height="91dp"
+            android:text="new Text"
+            android:textSize="24sp" />
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/RBtablets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tablets"
+                android:textColor="#4C8FB0" />
+
+            <RadioButton
+                android:id="@+id/RBinjection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Injection "
+                android:textColor="#4C8FB0" />
+
+            <RadioButton
+                android:id="@+id/RBcapsule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Capsule"
+                android:textColor="#4C8FB0" />
+
+            <RadioButton
+                android:id="@+id/RBdrops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Drops"
+                android:textColor="#4C8FB0" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/Day"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:text="new text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="new text"
+            android:textSize="20sp" />
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Weekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Weekly" />
+
+            <RadioButton
+                android:id="@+id/Monthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Monthly" />
+
+            <RadioButton
+                android:id="@+id/Daily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Daily" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+</LinearLayout>
